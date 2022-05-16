@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: aquamarine;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: right;
+    text-decoration: none;
+}
+
+.logo{
+    max-width: 10vw;
+    max-height:10vh;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-align: initial;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: end;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+    color: rgb(255, 0, 128);
+}
+
+.title{
+    font-family: 'Varela Round', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 0, 128);
+    padding: 1rem;
+    display: flex;  
+    flex-direction: column;
+    margin: 1rem;
+    max-width: 60vw;
+    max-height:60vh;
+    align-items: center;
+}
+
+.grid__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+	grid-template-rows: 1fr 1fr; 
+    row-gap: 1px;
+    column-gap: 1px;
+    background-position: center;
+}
+
+.grid-img-uno{
+    display: grid;
+    margin: 1px;
+    justify-self: center;
+    align-self: center;
+    background-image: url(/img/1.png);
+    background-size: contain;
+    background-position: inherit;
+    background-repeat: no-repeat;
+}
+
+.grid-img-dos{
+    display: grid;
+    margin: 1px;
+    justify-self: center;
+    align-self: center;
+    background-image: url(/img/2.png);
+    background-size: contain;
+    background-position: inherit;
+    background-repeat: no-repeat;
+}
+
+.grid-img-tres{
+    display: grid;
+    margin: 1px;
+    justify-self: center;
+    align-self: center;
+    background-image: url(/img/3.png);
+    background-size: contain;
+    background-position: inherit;
+    background-repeat: no-repeat;
+}
+
+.grid-text{
+    display: grid;
+    margin: 1px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+ul li{
+    display: inline;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 5px;
+}    
+
+#pie{
+    background-color: lightgrey;
+    font-family: 'Varela Round', sans-serif;
+    font-size: small;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.contact{
+    max-height: 10vh;
+    max-width: 10vw;
+    padding: 1rem;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: medium; 
+}
+
+.grid__contact{
+    display: grid;
+    grid-template-areas: "uno tres"
+                        "dos tres";
+    gap: 10px;
+}
+
+.grid__contact-uno{
+    grid-area: uno;
+    justify-self: left;
+    align-self: center;
+}
+
+.grid__contact-dos{
+    grid-area: dos;
+}
+
+.grid__contact-tres{
+    grid-area: tres;
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: medium; 
+}
+
+/* TABLET */
+
+@media (min-width: 541px) and (max-width: 720px) {
+
+}
+
+/* CELULAR */
+
+@media (min-width: 320px) and (max-width: 540px) {
+
+    .grid__contact{
+        display: grid;
+        grid-template-areas: "uno"
+                            "dos"
+                            "tres";
+        gap: 10px;
+    }
+
+    .grid__contact-uno{
+        grid-area: uno;
+        display: flex;
+        flex-direction: column;
+        justify-self: left;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .grid__contact-dos{
+        grid-area: dos;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .grid__contact-tres{
+        grid-area: tres;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+    }
+}
