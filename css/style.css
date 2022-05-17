@@ -4,7 +4,7 @@
 }
 
 header{
-    background: aquamarine;
+    background: linear-gradient(aquamarine, yellow);
     font-family: 'Varela Round', sans-serif;
     font-size: 1rem;
     font-weight: bold;
@@ -14,6 +14,7 @@ header{
 }
 
 .logo{
+    transform: rotate(50deg);
     max-width: 10vw;
     max-height:10vh;
     margin: 1rem;
@@ -119,10 +120,11 @@ ul li{
     padding: 1rem;
 }
 
-p{
+p:hover{
     font-family: 'Poppins', sans-serif;
     color: black;
     font-size: medium; 
+    height: 200px; width: 200px;
 }
 
 .grid__contact{
