@@ -14,7 +14,7 @@ header{
 }
 
 .logo{
-    transform: rotate(50deg);
+    transform: rotate(30deg);
     max-width: 10vw;
     max-height:10vh;
     margin: 1rem;
