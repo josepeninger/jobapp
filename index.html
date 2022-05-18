@@ -6,31 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>job.app - Servicio de consultoría profesional</title>
     <link rel="shortcut icon" href="./img/job.app.png">
-    <link rel="stylesheet" href="./css/style.css">
+<!-- BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- CSS -->    
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <!-- inicio menu principal -->
     <header>
-        <a href="#"><img src="./img/job.app.png" class="logo" alt="logo"></a>
-        <nav>
-            <ul id="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="./pages/about.html">About us</a></li>
-                <li><a href="./pages/services.html">Nuestros serivicios</a></li>
-                <li><a href="./pages/clients.html">Nuestos clientes</a></li>
-                <li><a href="./pages/contact.html">Contact us</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg nav-color">
+            <a href="#"><img src="./img/job.app.png" alt="logo" width="50" height="50"></a>
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link nav-text" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/services.html">Nuestros servicios</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/clients.html">Nuestros clientes</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/contact.html">Contact us</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- fin menu principal -->
 
     <main>
     <!-- primer bloque intro -->
-        <section>
-            <div><p id="intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea minima culpa numquam veritatis optio amet repellat, delectus, odit tempora molestias cupiditate aspernatur explicabo distinctio praesentium ullam facere exercitationem at autem!</p></div>
-            <div><img src="./img/job.app.png"></div>
-        </section>
+
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <p id="intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum consequuntur dicta laboriosam, dignissimos deserunt impedit, minima recus</p>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <img src="./img/job.app.png">
+            </div>
+            </div>
+        </div>
     
     <!-- segundo bloque servicios -->
         <h1 class="title">Nuestros servicios</h1>
@@ -69,5 +96,8 @@
     </footer>
     <!-- fin footer -->
 
+    <!-- JAVA BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 </html>
