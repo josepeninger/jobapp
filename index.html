@@ -9,13 +9,13 @@
 <!-- BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <!-- CSS -->    
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <!-- inicio menu principal -->
     <header>
-        <nav class="navbar navbar-expand-lg nav-color">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <a href="#"><img src="./img/job.app.png" alt="logo" width="50" height="50"></a>
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,37 +48,60 @@
     <main>
     <!-- primer bloque intro -->
 
-        <div class="container">
+        <div class="container about-us">
             <div class="row">
             <div class="col-lg-6 col-md-6">
-                <p id="intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum consequuntur dicta laboriosam, dignissimos deserunt impedit, minima recus</p>
+                <p id="intro">@job.app nace con el propósito de transformar la vida de las personas o simplemente, acompañarlas en su desarrollo profesional hacia un mundo más digital.</p>
+                <button a href="../pages/about.html" class="conocenos">ABOUT US</button>
             </div>
             <div class="col-lg-6 col-md-6">
-                <img src="./img/job.app.png">
+                <img src="./img/mujer-colores.jpg" id="foto-intro" width="300" height="300">
             </div>
             </div>
         </div>
     
     <!-- segundo bloque servicios -->
-        <h1 class="title">Nuestros servicios</h1>
+    
+        <div class="container nuestros-servicios">
+            <div class="row">
+                <h1 id="title">Nuestros servicios</h1>
+            <div class="col-lg-4 col-md-12">
+                <img class="img-servicio" src="./img/1.png" alt="cv" width="200" height="200">
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <img class="img-servicio" src="./img/2.png" alt="entrevista" width="200" height="200">
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <img class="img-servicio" src="./img/3.png" alt="desarrollo" width="200" height="200">
+            </div>
+            </div>
 
-        <section class="grid__container">
-            <div class="grid-img-uno">1</div>
-            <div class="grid-img-dos">2</div>
-            <div class="grid-img-tres">3</div>
-            <div class="grid-text"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et excepturi iure repudiandae voluptates voluptatibus praesentium suscipit, corrupti in porro voluptatem tempore harum est necessitatibus aspernatur eaque quas repellat sint ducimus!</p></div>
-            <div class="grid-text"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et excepturi iure repudiandae voluptates voluptatibus praesentium suscipit, corrupti in porro voluptatem tempore harum est necessitatibus aspernatur eaque quas repellat sint ducimus!</p></div>
-            <div class="grid-text"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et excepturi iure repudiandae voluptates voluptatibus praesentium suscipit, corrupti in porro voluptatem tempore harum est necessitatibus aspernatur eaque quas repellat sint ducimus!</p></div>
-        </section>
+            <div class="row">
+            <div class="col-lg-4 col-md-12">
+                <p class="descripcion">jose</p>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <p class="descripcion">jose</p>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <p class="descripcion">jose</p>
+            </div>
+            </div>
+        </div>
 
     <!-- tercer bloque clientes -->
-        <h2 class="title">Nuestros clientes</h2>
-        
-        <section> 
-            <div><iframe width="560" height="315" src="https://www.youtube.com/embed/FxAedalAM2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus recusandae vero fugit illo quam, quidem porro quaerat non laboriosam error cum, hic iste totam, sequi sapiente exercitationem ad dolore.</p></div>
-        </section>
-        
+
+        <div class="container nuestros-clientes">
+            <div class="row">
+                <h2 id="title">Nuestros clientes</h2>
+            <div class="col-lg-6 col-md-6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FxAedalAM2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <p class="text-client">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus recusandae vero fugit illo quam, quidem porro quaerat non laboriosam error cum, hic iste totam, sequi sapiente exercitationem ad dolore.</p>
+            </div>
+            </div>
+        </div>
     </main>
     
     <!-- inicio footer -->

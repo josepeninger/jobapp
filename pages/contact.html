@@ -55,7 +55,7 @@
             <div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi dicta provident aliquam beatae sunt qui distinctio quam, autem quas blanditiis sapiente suscipit fugit ex repellat debitis eaque quod corrupti aliquid?</p></div>
         </section>
 
-    <!-- inicio form contact -->
+    <!-- inicio form contact 
         <section class="grid__contact-tres"> 
             <form>
                 <input type="text" placeholder="Nombre"><br>
@@ -78,6 +78,35 @@
                 <label for="newsletter">¿Te sumás a nuestro newsletter?</label>
             
                 <input id="info" type="submit" value="¡LISTO!">
+            </form>-->
+
+            <form class="grid__contact-tres">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Celular</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">¿Cómo escuchaste de nosotros?</label>
+                    <select id="disabledSelect" class="form-select">
+                        <option value="Redes">Redes</option>
+                        <option value="Un conocido me habló de ustedes">Un conocido me habló de ustedes</option>
+                        <option value="Web">Web</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputConsult" class="form-label">Dejanos tu consulta:</label>
+                    <input type="text" class="form-control" id="exampleInputConsult" aria-describedby="consulting">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">¿Te sumás a nuestro newsletter?</label>
+                </div>
+                <button type="submit" class="btn btn-primary">¡LISTO!</button>
             </form>
         </section>
     </main>
