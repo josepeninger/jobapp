@@ -1,227 +1,190 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+@charset "UTF-8";
+/* Gama de colores */
+/* Fuentes */
+/* Tamaños */
+header {
+  background-color: #019d97;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: right;
+  text-decoration: none; }
 
-header{
-    background-color: rgb(1, 157, 151);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 1rem;
-    text-align: right;
-    text-decoration: none;
-}   
+#pie {
+  background-color: #f0e9e9;
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
+  font-weight: bold;
+  padding: 1rem; }
 
-#intro{
-    display: flex;
-    flex-direction: column;
-    -ms-flex-align: end;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    color: rgb(255, 20, 149);
-    text-align: right;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    margin: 2rem;
-}
+* {
+  margin: 0;
+  padding: 0; }
 
-#foto-intro{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 2rem;
-}
+#intro {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-align: end;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #ff1495;
+  text-align: right;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem; }
 
-.conocenos{
-    position: absolute;
-    top: 19.5rem;
-    background-color: rgb(1, 157, 151);
-    width: 7rem;
-    padding: 0.3rem;
-    margin-left: 25%;
-    transform: translateX(-50%);
-    transition: 0.5s;
-}
+#foto-intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem; }
 
-#title{
-    font-family: 'Montserrat', sans-serif;
-    font-size: xx-large;
-    font-weight: bold;
-    text-align: center;
-    color: rgb(1, 157, 151);
-    padding: 1rem;
-    display: flex;  
-    flex-direction: column;
-    margin: 2rem;
-    max-width: 60vw;
-    max-height:60vh;
-    align-items: center;
-}
+.conocenos {
+  position: absolute;
+  top: 19.5rem;
+  background-color: #019d97;
+  width: 7rem;
+  padding: 0.3rem;
+  margin-left: 25%;
+  transform: translateX(-50%);
+  transition: 0.5s; }
 
-.descripcion{
-    display: flex;
-    flex-direction: column;
-    -ms-flex-align: center;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(6, 6, 6);
-    text-align: center;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    margin: 2rem;
-}   
+#title {
+  font-family: "Montserrat", sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+  color: #019d97;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  max-width: 60vw;
+  max-height: 60vh;
+  align-items: center; }
 
-.img-servicio{
-    display: flex;
-    flex-direction: column;
-    -ms-flex-align: center;
-    justify-content: center;
-    flex-direction: row;
-} 
+.descripcion {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #060606;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem; }
 
-.text-client{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    color: rgb(255, 20, 149);
-    text-align: left;
-    flex-direction: row;
-    justify-content: left;
-    width: 100%;
-    margin: 1rem;
-}
+.img-servicio {
+  display: flex;
+  flex-direction: column;
+  -ms-flex-align: center;
+  justify-content: center;
+  flex-direction: row; }
 
-#pie{
-    background-color: lightgrey;
-    font-family: 'Varela Round', sans-serif;
-    font-size: small;
-    font-weight: bold;
-    padding: 1rem;
-}
+.text-client {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #ff1495;
+  text-align: left;
+  flex-direction: row;
+  justify-content: left;
+  width: 100%;
+  margin: 1rem; }
 
-.contact{
-    max-height: 10vh;
-    max-width: 10vw;
-    padding: 1rem;
-}
+.contact {
+  max-height: 10vh;
+  max-width: 10vw;
+  padding: 1rem; }
 
-p{
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    font-size: medium; 
-    height: 200px; width: 200px;
-    margin: 1rem;
-}
+p {
+  font-family: "Poppins", sans-serif;
+  color: #060606;
+  font-size: medium;
+  height: 200px;
+  width: 200px;
+  margin: 1rem; }
 
-.grid__contact{
-    display: grid;
-    grid-template-areas: "uno tres"
-                        "dos tres";
-    gap: 10px;
-}
-
-.grid__contact-uno{
+.grid__contact {
+  display: grid;
+  grid-template-areas: "uno tres" "dos tres";
+  gap: 10px; }
+  .grid__contact-uno {
     grid-area: uno;
     justify-self: left;
     align-self: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: xx-large;
     font-weight: bold;
-    color: rgb(1, 157, 151);
+    color: #019d97;
     padding: 1rem;
     margin: 2rem;
     max-width: 60vw;
-    max-height:60vh;
-}
-
-.grid__contact-dos{
-    grid-area: dos;
-}
-
-.grid__contact-tres{
+    max-height: 60vh; }
+  .grid__contact-dos {
+    grid-area: dos; }
+  .grid__contact-tres {
     grid-area: tres;
     margin: 1rem;
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    font-size: medium; 
-}
+    font-family: "Poppins", sans-serif;
+    color: #060606;
+    font-size: medium; }
 
-#servicios-detalle{
-    background-image: url(../img/hombre-brainstorming.jpg);
-    height: 80rem;
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 10%;
-}
+#servicios-detalle {
+  background-image: url(../img/hombre-brainstorming.jpg);
+  height: 80rem;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10%; }
 
-.menu-servicios{    
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.89);
-    height: 20rem;
-    width: 40%;
-    text-align: center;
-    margin-top: 6%;
-    margin-bottom: 6%;
-    padding: 2% 2%;
+.menu-servicios {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.89);
+  height: 20rem;
+  width: 40%;
+  text-align: center;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  padding: 2% 2%; }
 
-}
-
-.clientes{    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
+.clientes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 /* TABLET */
-
-@media (min-width: 541px) and (max-width: 720px) {
-
-}
-
 /* CELULAR */
-
 @media (min-width: 320px) and (max-width: 540px) {
-
-    .grid__contact{
-        display: grid;
-        grid-template-areas: "uno"
-                            "dos"
-                            "tres";
-        gap: 10px;
-    }
-
-    .grid__contact-uno{
-        grid-area: uno;
-        display: flex;
-        flex-direction: column;
-        justify-self: left;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    .grid__contact-dos{
-        grid-area: dos;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    .grid__contact-tres{
-        grid-area: tres;
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        justify-self: center;
-    }
-}
+  .grid__contact {
+    display: grid;
+    grid-template-areas: "uno" "dos" "tres";
+    gap: 10px; }
+    .grid__contact-uno {
+      grid-area: uno;
+      display: flex;
+      flex-direction: column;
+      justify-self: left;
+      align-self: center;
+      justify-self: center; }
+    .grid__contact-dos {
+      grid-area: dos;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      justify-self: center; }
+    .grid__contact-tres {
+      grid-area: tres;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      justify-self: center; } }

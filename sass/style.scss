@@ -1,0 +1,210 @@
+@import 'variables';
+@import 'header';
+@import 'footer';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: end;
+    font-family: $fuente-secundaria;
+    font-weight: bold;
+    color: $color-principal;
+    text-align: right;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem;
+}
+
+#foto-intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.conocenos{
+    position: absolute;
+    top: 19.5rem;
+    background-color: $color-secundario;
+    width: 7rem;
+    padding: 0.3rem;
+    margin-left: 25%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+#title{
+    font-family: $fuente-principal;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    color: $color-secundario;
+    padding: 1rem;
+    display: flex;  
+    flex-direction: column;
+    margin: 2rem;
+    max-width: 60vw;
+    max-height:60vh;
+    align-items: center;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: center;
+    font-family: $fuente-secundaria;
+    color: $color-texto;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem;
+}   
+
+.img-servicio{
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: center;
+    justify-content: center;
+    flex-direction: row;
+} 
+
+.text-client{
+    display: flex;
+    flex-direction: column;
+    font-family: $fuente-secundaria;
+    font-weight: bold;
+    color: $color-principal;
+    text-align: left;
+    flex-direction: row;
+    justify-content: left;
+    width: 100%;
+    margin: 1rem;
+}
+
+.contact{
+    max-height: 10vh;
+    max-width: 10vw;
+    padding: 1rem;
+}
+
+p{
+    font-family: $fuente-secundaria;
+    color: $color-texto;
+    font-size: medium; 
+    height: 200px; width: 200px;
+    margin: 1rem;
+}
+
+.grid__contact{
+    display: grid;
+    grid-template-areas: "uno tres"
+                        "dos tres";
+    gap: 10px;
+    &-uno{
+        grid-area: uno;
+        justify-self: left;
+        align-self: center;
+        font-family: $fuente-principal;
+        font-size: xx-large;
+        font-weight: bold;
+        color: $color-secundario;
+        padding: 1rem;
+        margin: 2rem;
+        max-width: 60vw;
+        max-height:60vh;
+    }
+    &-dos{
+        grid-area: dos;
+    }
+    &-tres{
+    grid-area: tres;
+    margin: 1rem;
+    font-family: $fuente-secundaria;
+    color: $color-texto;
+    font-size: medium; 
+    }
+
+}   
+
+#servicios-detalle{
+    background-image: url(../img/hombre-brainstorming.jpg);
+    height: 80rem;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10%;
+}
+
+.menu-servicios{    
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $color-bg;
+    height: 20rem;
+    width: 40%;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    padding: 2% 2%;
+
+}
+
+.clientes{    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+/* TABLET */
+
+@media (min-width: 541px) and (max-width: 720px) {
+
+}
+
+/* CELULAR */
+
+@media (min-width: 320px) and (max-width: 540px) {
+
+    .grid__contact{
+        display: grid;
+        grid-template-areas: "uno"
+                            "dos"
+                            "tres";
+        gap: 10px;
+        &-uno{
+        grid-area: uno;
+        display: flex;
+        flex-direction: column;
+        justify-self: left;
+        align-self: center;
+        justify-self: center;
+        }
+        &-dos{
+        grid-area: dos;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+        }
+        &-tres{
+        grid-area: tres;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+        }
+    }
+
+
+}
