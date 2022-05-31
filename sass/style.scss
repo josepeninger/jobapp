@@ -7,18 +7,21 @@
     padding: 0;
 }
 
+@mixin mixFlexbox ($direction , $align) {
+    flex-direction: $direction;
+    text-align: $align;
+}
+
 #intro{
     display: flex;
-    flex-direction: column;
     -ms-flex-align: end;
     font-family: $fuente-secundaria;
     font-weight: bold;
     color: $color-principal;
-    text-align: right;
-    flex-direction: row;
     justify-content: center;
     width: 100%;
     margin: 2rem;
+    @include mixFlexbox (column,right)
 }
 
 #foto-intro{
@@ -39,32 +42,34 @@
     transition: 0.5s;
 }
 
-#title{
+.mixTextoPrincipal{
     font-family: $fuente-principal;
+    color: $color-secundario;
+}
+
+#title{
     font-size: xx-large;
     font-weight: bold;
-    text-align: center;
-    color: $color-secundario;
     padding: 1rem;
-    display: flex;  
-    flex-direction: column;
+    display: flex; 
     margin: 2rem;
     max-width: 60vw;
     max-height:60vh;
     align-items: center;
+    @include mixFlexbox (column,center)
+    @extend .mixTextoPrincipal
 }
 
 .descripcion{
     display: flex;
-    flex-direction: column;
     -ms-flex-align: center;
     font-family: $fuente-secundaria;
     color: $color-texto;
-    text-align: center;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     margin: 2rem;
+    @include mixFlexbox (column,center)
 }   
 
 .img-servicio{
@@ -72,20 +77,19 @@
     flex-direction: column;
     -ms-flex-align: center;
     justify-content: center;
-    flex-direction: row;
 } 
 
 .text-client{
     display: flex;
-    flex-direction: column;
     font-family: $fuente-secundaria;
     font-weight: bold;
     color: $color-principal;
-    text-align: left;
     flex-direction: row;
     justify-content: left;
     width: 100%;
     margin: 1rem;
+    @include mixFlexbox (column,left)
+    
 }
 
 .contact{
@@ -98,7 +102,8 @@ p{
     font-family: $fuente-secundaria;
     color: $color-texto;
     font-size: medium; 
-    height: 200px; width: 200px;
+    height: 200px; 
+    width: 200px;
     margin: 1rem;
 }
 
@@ -111,14 +116,13 @@ p{
         grid-area: uno;
         justify-self: left;
         align-self: center;
-        font-family: $fuente-principal;
         font-size: xx-large;
         font-weight: bold;
-        color: $color-secundario;
         padding: 1rem;
         margin: 2rem;
         max-width: 60vw;
         max-height:60vh;
+        @extend .mixTextoPrincipal
     }
     &-dos{
         grid-area: dos;
