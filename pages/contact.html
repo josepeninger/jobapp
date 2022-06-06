@@ -16,18 +16,19 @@
 </head>
 <body>
     <!-- inicio menu principal -->
-
     <header>
-        <nav class="navbar navbar-expand-lg nav-color">
-            <a href="../index.html"><img src="../img/job.app.png" alt="logo" width="50" height="50"></a>
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="cointainer-fluid"> 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span> 
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
+                <a class="navbar-brand d-flex" href="../index.html">
+                    <img src="../img/job.app.png" alt="logo" width="50" height="50"></a>
+                </a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    <a class="nav-link nav-text" aria-current="page" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="../pages/about.html">About us</a>
@@ -41,7 +42,7 @@
                     <li class="nav-item">
                     <a class="nav-link" href="../pages/contact.html">Contact us</a>
                     </li>
-                </ul>
+                </ul>     
                 </div>
             </div>
         </nav>
@@ -56,31 +57,6 @@
         <section class="grid__contact-dos">
             <div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi dicta provident aliquam beatae sunt qui distinctio quam, autem quas blanditiis sapiente suscipit fugit ex repellat debitis eaque quod corrupti aliquid?</p></div>
         </section>
-
-    <!-- inicio form contact 
-        <section class="grid__contact-tres"> 
-            <form>
-                <input type="text" placeholder="Nombre"><br>
-
-                <input type="text" placeholder="Correo electrónico"><br>
-
-                <input type="text" placeholder="Celular"><br>
-
-                <label for="opciones">¿Cómo escuchaste de nosotros?</label>
-                    <select name="opciones" id="opciones"> 
-                        <option value="Redes">Redes</option>
-                        <option value="Un conocido me habló de ustedes">Un conocido me habló de ustedes</option>
-                        <option value="Web">Web</option>
-                        <option value="Otro">Otro</option>
-                    </select>
-
-                <input type="text" placeholder="Dejanos tu consulta"><br>
-            
-                <input id="newsletter" type="checkbox" name="acepta" value="1">
-                <label for="newsletter">¿Te sumás a nuestro newsletter?</label>
-            
-                <input id="info" type="submit" value="¡LISTO!">
-            </form>-->
 
             <form class="grid__contact-tres">
                 <div class="mb-3">
@@ -114,17 +90,23 @@
     </main>
     
     <!-- inicio footer -->
-    <footer id="pie">
+    <footer>
         <a href="https://accounts.google.com/signin">
-            <img src="../img/icons8-gmail-login-50.png" alt="Gmail"/>
+            <img src="../img/icons8-gmail-login-50.png" class="contact" alt="Gmail"/>
         </a>
         <a href="https://www.instagram.com/?hl=es">
-            <img src="../img/icons8-instagram-old-50.png" alt="Instagram"/>
+            <img src="../img/icons8-instagram-old-50.png" class="contact" alt="Instagram"/>
         </a>
         <a href="https://www.linkedin.com/feed/">
-            <img src="../img/icons8-linkedin-64.png" alt="Linkedin"/>
+            <img src="../img/icons8-linkedin-64.png" class="contact" alt="Linkedin"/>
         </a>
+        <div class="help">
+            <p>¿Cómo podemos ayudarte?</p>
+            <img src="../img/Plan_de_Marketing-removebg-preview.png" class="help-foto" alt="help"/> 
+        </div>
     </footer>
+    <!-- fin footer -->
+    
     <!-- JAVA BOOTSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>

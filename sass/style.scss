@@ -12,33 +12,33 @@
     text-align: $align;
 }
 
-#intro{
+.about-us{
     display: flex;
-    -ms-flex-align: end;
+    flex-direction: column;
+    justify-content: center;
+
+} 
+
+.col-lg-6.col-md-6.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+#intro{
     font-family: $fuente-secundaria;
     font-weight: bold;
     color: $color-principal;
-    justify-content: center;
     width: 100%;
-    margin: 2rem;
-    @include mixFlexbox (column,right)
-}
-
-#foto-intro{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 2rem;
+    text-align: right;
 }
 
 .conocenos{
-    position: absolute;
     top: 19.5rem;
     background-color: $color-secundario;
     width: 7rem;
     padding: 0.3rem;
-    margin-left: 25%;
-    transform: translateX(-50%);
     transition: 0.5s;
 }
 
@@ -51,60 +51,91 @@
     font-size: xx-large;
     font-weight: bold;
     padding: 1rem;
-    display: flex; 
     margin: 2rem;
-    max-width: 60vw;
-    max-height:60vh;
-    align-items: center;
-    @include mixFlexbox (column,center)
+    text-align: center;    
     @extend .mixTextoPrincipal
 }
 
-.descripcion{
+.col-lg-4.col-md-12{
     display: flex;
-    -ms-flex-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 2rem;
+
+}
+
+.descripcion{
     font-family: $fuente-secundaria;
     color: $color-texto;
-    flex-direction: row;
-    justify-content: center;
     width: 100%;
-    margin: 2rem;
-    @include mixFlexbox (column,center)
+    text-align: center;
 }   
 
-.img-servicio{
+.col-lg-6.col-md-6{
     display: flex;
-    flex-direction: column;
-    -ms-flex-align: center;
-    justify-content: center;
+    flex-direction: row;
+
 } 
 
 .text-client{
-    display: flex;
     font-family: $fuente-secundaria;
     font-weight: bold;
     color: $color-principal;
-    flex-direction: row;
-    justify-content: left;
     width: 100%;
-    margin: 1rem;
-    @include mixFlexbox (column,left)
+    text-align: left;
     
-}
-
-.contact{
-    max-height: 10vh;
-    max-width: 10vw;
-    padding: 1rem;
 }
 
 p{
     font-family: $fuente-secundaria;
     color: $color-texto;
     font-size: medium; 
-    height: 200px; 
-    width: 200px;
+}
+
+.nuestra-historia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.carousel-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-secundario;
+}
+
+h5{
+    font-family: $fuente-principal;
+    color: $color-texto;
+}
+
+#servicios-detalle{
+    background-image: url(../img/hombre-brainstorming.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+}
+
+.menu-servicios{    
+    justify-content: center;
+    align-self: center;
+    background-color: $color-bg;
+    height: 20rem;
+    width: 20rem;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    padding: 2%;
     margin: 1rem;
+
 }
 
 .grid__contact{
@@ -137,30 +168,6 @@ p{
 
 }   
 
-#servicios-detalle{
-    background-image: url(../img/hombre-brainstorming.jpg);
-    height: 80rem;
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 10%;
-}
-
-.menu-servicios{    
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: $color-bg;
-    height: 20rem;
-    width: 40%;
-    text-align: center;
-    margin-top: 6%;
-    margin-bottom: 6%;
-    padding: 2% 2%;
-
-}
 
 .clientes{    
     display: flex;

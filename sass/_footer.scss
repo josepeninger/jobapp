@@ -1,7 +1,22 @@
-#pie{
+footer{
     background-color: $color-footer;
     font-family: $fuente-principal;
     font-size: small;
     font-weight: bold;
-    padding: 1rem;
+}
+
+.contact{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+}
+
+.help{
+    text-align: right;
+    &-foto{
+        height: 100px;
+        width: 50px;
+        margin: 1rem;
+}
+
 }
