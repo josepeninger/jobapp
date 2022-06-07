@@ -7,11 +7,6 @@
     padding: 0;
 }
 
-@mixin mixFlexbox ($direction , $align) {
-    flex-direction: $direction;
-    text-align: $align;
-}
-
 .about-us{
     display: flex;
     flex-direction: column;
@@ -71,7 +66,7 @@
     text-align: center;
 }   
 
-.col-lg-6.col-md-6{
+.col-lg-6.col-md-6.clientes{
     display: flex;
     flex-direction: row;
 
@@ -128,14 +123,20 @@ h5{
     justify-content: center;
     align-self: center;
     background-color: $color-bg;
-    height: 20rem;
+    height: 30rem;
     width: 20rem;
     text-align: center;
     margin-top: 6%;
     margin-bottom: 6%;
     padding: 2%;
-    margin: 1rem;
+    margin: 2rem;
+}
 
+h3{
+    font-family: $fuente-secundaria;
+    color: $color-principal;
+    font-weight: bold;
+    font-size: 30px; 
 }
 
 .grid__contact{
@@ -147,16 +148,17 @@ h5{
         grid-area: uno;
         justify-self: left;
         align-self: center;
-        font-size: xx-large;
+        font-size: 100px;
         font-weight: bold;
         padding: 1rem;
-        margin: 2rem;
+        margin-left: 2rem;
         max-width: 60vw;
         max-height:60vh;
         @extend .mixTextoPrincipal
     }
     &-dos{
         grid-area: dos;
+        margin-left: 2rem;
     }
     &-tres{
     grid-area: tres;
@@ -168,13 +170,18 @@ h5{
 
 }   
 
-
 .clientes{    
     display: flex;
     flex-direction: row;
     justify-content: center;
-
+    margin-bottom: 2rem;
+    &-texto{  
+        display: flex;
+        flex-direction: column;
+    }
 }
+
+
 
 /* TABLET */
 
