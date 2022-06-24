@@ -1,22 +1,35 @@
 footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: $color-footer;
     font-family: $fuente-principal;
-    font-size: small;
     font-weight: bold;
 }
 
-.contact{
-    height: 50px;
-    width: 50px;
-    padding: 5px;
+.redes{
+    margin-left: 1rem;
+    .contact{
+        padding: 0.25rem;
+        
+    }
 }
 
-.help{
-    text-align: right;
-    &-foto{
-        height: 100px;
-        width: 50px;
+.footer-org{
+    display: flex;
+    flex-direction: row;
+    .help{
+        align-self: center;
+    }
+    .help-foto{
         margin: 1rem;
+        }
 }
 
-}
+
+
+
+
+
+

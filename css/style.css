@@ -14,21 +14,25 @@ nav {
   justify-content: end; }
 
 footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color: #f0e9e9;
   font-family: "Montserrat", sans-serif;
-  font-size: small;
   font-weight: bold; }
 
-.contact {
-  height: 50px;
-  width: 50px;
-  padding: 5px; }
+.redes {
+  margin-left: 1rem; }
+  .redes .contact {
+    padding: 0.25rem; }
 
-.help {
-  text-align: right; }
-  .help-foto {
-    height: 100px;
-    width: 50px;
+.footer-org {
+  display: flex;
+  flex-direction: row; }
+  .footer-org .help {
+    align-self: center; }
+  .footer-org .help-foto {
     margin: 1rem; }
 
 * {
@@ -39,60 +43,60 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  .about-us .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .about-us .intro #texto-intro {
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      color: #ff1495;
+      width: 100%;
+      text-align: right; }
+    .about-us .intro .conocenos {
+      top: 19.5rem;
+      background-color: #019d97;
+      width: 7rem;
+      padding: 0.3rem;
+      transition: 0.5s; }
 
-.col-lg-6.col-md-6.intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-#intro {
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  color: #ff1495;
-  width: 100%;
-  text-align: right; }
-
-.conocenos {
-  top: 19.5rem;
-  background-color: #019d97;
-  width: 7rem;
-  padding: 0.3rem;
-  transition: 0.5s; }
-
-.mixTextoPrincipal, #title, .grid__contact-uno {
+.mixTextoPrincipal, .title, .grid__contact-uno {
   font-family: "Montserrat", sans-serif;
   color: #019d97; }
 
-#title {
-  font-size: xx-large;
+.title {
   font-weight: bold;
-  padding: 1rem;
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   text-align: center; }
 
-.col-lg-4.col-md-12 {
+.nuestros-servicios .col-lg-4.col-md-12 {
   display: flex;
   justify-content: center;
-  justify-items: center;
-  margin-top: 2rem; }
+  justify-items: center; }
 
-.descripcion {
+.nuestros-servicios .descripcion {
   font-family: "Poppins", sans-serif;
   color: #060606;
-  width: 100%;
-  text-align: center; }
+  width: 19rem;
+  text-align: center;
+  margin-top: 2rem; }
 
-.col-lg-6.col-md-6.clientes {
+.nuestros-clientes .clientes {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: right; }
 
-.text-client {
+.nuestros-clientes .texto-cliente {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: #ff1495;
-  width: 100%;
   text-align: left; }
+
+.nuestros-clientes video {
+  width: 25rem;
+  height: 25rem; }
 
 p {
   font-family: "Poppins", sans-serif;
@@ -105,15 +109,20 @@ p {
   align-items: center;
   text-align: center; }
 
-.carousel-inner {
+.founders {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
   background-color: #019d97; }
 
-h5 {
-  font-family: "Montserrat", sans-serif;
-  color: #060606; }
+.founders-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .founders-text h5 {
+    font-family: "Montserrat", sans-serif;
+    color: #ff1495;
+    font-weight: bold; }
 
 #servicios-detalle {
   background-image: url(../img/hombre-brainstorming.jpg);
@@ -163,21 +172,54 @@ h3 {
     margin-left: 2rem; }
   .grid__contact-tres {
     grid-area: tres;
-    margin: 1rem;
+    margin: 2rem;
     font-family: "Poppins", sans-serif;
     color: #060606;
     font-size: medium; }
 
+#listo {
+  top: 19.5rem;
+  background-color: #019d97;
+  width: 7rem;
+  padding: 0.3rem;
+  transition: 0.5s; }
+
 .clientes {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 2rem; }
   .clientes-texto {
-    display: flex;
-    flex-direction: column; }
+    font-family: "Montserrat", sans-serif;
+    color: #060606;
+    align-self: center; }
 
 /* TABLET */
+.grid__contact {
+  display: grid;
+  grid-template-areas: "uno" "dos" "tres";
+  gap: 10px; }
+  .grid__contact-uno {
+    grid-area: uno;
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+    align-self: center;
+    justify-self: center; }
+  .grid__contact-dos {
+    grid-area: dos;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center; }
+  .grid__contact-tres {
+    grid-area: tres;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center; }
+
 /* CELULAR */
 @media (min-width: 320px) and (max-width: 540px) {
   .grid__contact {

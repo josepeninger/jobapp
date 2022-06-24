@@ -11,75 +11,74 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        #texto-intro{
+            font-family: $fuente-secundaria;
+            font-weight: bold;
+            color: $color-principal;
+            width: 100%;
+            text-align: right;
+        }
+        .conocenos{
+            top: 19.5rem;
+            background-color: $color-secundario;
+            width: 7rem;
+            padding: 0.3rem;
+            transition: 0.5s;
+        }
+    } 
 } 
-
-.col-lg-6.col-md-6.intro{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} 
-
-#intro{
-    font-family: $fuente-secundaria;
-    font-weight: bold;
-    color: $color-principal;
-    width: 100%;
-    text-align: right;
-}
-
-.conocenos{
-    top: 19.5rem;
-    background-color: $color-secundario;
-    width: 7rem;
-    padding: 0.3rem;
-    transition: 0.5s;
-}
 
 .mixTextoPrincipal{
     font-family: $fuente-principal;
     color: $color-secundario;
 }
 
-#title{
-    font-size: xx-large;
+.title{
     font-weight: bold;
-    padding: 1rem;
-    margin: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     text-align: center;    
     @extend .mixTextoPrincipal
 }
 
-.col-lg-4.col-md-12{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 2rem;
-
+.nuestros-servicios{
+    .col-lg-4.col-md-12{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+    .descripcion{
+        font-family: $fuente-secundaria;
+        color: $color-texto;
+        width: 19rem;
+        text-align: center;
+        margin-top: 2rem;
+    }   
 }
 
-.descripcion{
-    font-family: $fuente-secundaria;
-    color: $color-texto;
-    width: 100%;
-    text-align: center;
-}   
-
-.col-lg-6.col-md-6.clientes{
-    display: flex;
-    flex-direction: row;
+.nuestros-clientes{
+    .clientes{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;    
+    } 
+    .texto-cliente{
+        font-family: $fuente-secundaria;
+        font-weight: bold;
+        color: $color-principal;
+        text-align: left;   
+    }
+    video{
+        width: 25rem;
+        height: 25rem;
+    }
 
 } 
-
-.text-client{
-    font-family: $fuente-secundaria;
-    font-weight: bold;
-    color: $color-principal;
-    width: 100%;
-    text-align: left;
-    
-}
 
 p{
     font-family: $fuente-secundaria;
@@ -94,17 +93,22 @@ p{
     text-align: center;
 }
 
-
-.carousel-inner{
+.founders{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
     background-color: $color-secundario;
 }
 
-h5{
-    font-family: $fuente-principal;
-    color: $color-texto;
+.founders-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    h5{
+        font-family: $fuente-principal;
+        color: $color-principal;
+        font-weight: bold;
+    }
 }
 
 #servicios-detalle{
@@ -162,7 +166,7 @@ h3{
     }
     &-tres{
     grid-area: tres;
-    margin: 1rem;
+    margin: 2rem;
     font-family: $fuente-secundaria;
     color: $color-texto;
     font-size: medium; 
@@ -170,14 +174,23 @@ h3{
 
 }   
 
+#listo{
+    top: 19.5rem;
+    background-color: $color-secundario;
+    width: 7rem;
+    padding: 0.3rem;
+    transition: 0.5s;
+}    
+
 .clientes{    
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 2rem;
-    &-texto{  
-        display: flex;
-        flex-direction: column;
+    &-texto{ 
+        font-family: $fuente-principal;
+        color: $color-texto;
+        align-self: center;
     }
 }
 
@@ -188,6 +201,38 @@ h3{
 @media (min-width: 541px) and (max-width: 720px) {
 
 }
+
+.grid__contact{
+    display: grid;
+    grid-template-areas: "uno"
+                        "dos"
+                        "tres";
+    gap: 10px;
+    &-uno{
+    grid-area: uno;
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+    align-self: center;
+    justify-self: center;
+    }
+    &-dos{
+    grid-area: dos;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    }
+    &-tres{
+    grid-area: tres;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    }
+}
+
 
 /* CELULAR */
 
