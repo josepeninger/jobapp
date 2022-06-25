@@ -92,7 +92,8 @@ footer {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: #ff1495;
-  text-align: left; }
+  text-align: left;
+  margin-right: 2rem; }
 
 .nuestros-clientes video {
   width: 25rem;
@@ -164,9 +165,7 @@ h3 {
     font-size: 100px;
     font-weight: bold;
     padding: 1rem;
-    margin-left: 2rem;
-    max-width: 60vw;
-    max-height: 60vh; }
+    margin-left: 2rem; }
   .grid__contact-dos {
     grid-area: dos;
     margin-left: 2rem; }
@@ -195,31 +194,6 @@ h3 {
     align-self: center; }
 
 /* TABLET */
-.grid__contact {
-  display: grid;
-  grid-template-areas: "uno" "dos" "tres";
-  gap: 10px; }
-  .grid__contact-uno {
-    grid-area: uno;
-    display: flex;
-    flex-direction: column;
-    justify-self: left;
-    align-self: center;
-    justify-self: center; }
-  .grid__contact-dos {
-    grid-area: dos;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-self: center; }
-  .grid__contact-tres {
-    grid-area: tres;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-self: center; }
-
 /* CELULAR */
 @media (min-width: 320px) and (max-width: 540px) {
   .grid__contact {
