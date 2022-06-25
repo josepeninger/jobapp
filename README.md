@@ -2,49 +2,30 @@
 ## Table of Contents
 1. [General Info](#general-info)
 2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
+3. [FAQs](#faqs)
 ### General Info
 ***
-Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
-### Screenshot
-![Image text](https://www.united-internet.de/fileadmin/user_upload/Brands/Downloads/Logo_IONOS_by.jpg)
+El presente proyecto fue desarrollado en el marco del curso Desarrollo Web de Coderhouse, en el año 2022. Para su construcción, fueron utilizadas prácticas de html, css y sass.
 ## Technologies
 ***
-A list of technologies used within the project:
-* [Technologie name](https://example.com): Version 12.3 
-* [Technologie name](https://example.com): Version 2.34
-* [Library name](https://example.com): Version 1234
-## Installation
-***
-A little intro about the installation. 
-```
-$ git clone https://example.com
-$ cd ../path/to/the/file
-$ npm install
-$ npm start
-```
-Side information: To use the application in a special environment use ```lorem ipsum``` to start
-## Collaboration
-***
-Give instructions on how to collaborate with your project.
-> Maybe you want to write a quote in this part. 
-> It should go over several rows?
-> This is how you do it.
+Para este proyecto, se utilizaron las siguientes dependencias y librerías:
+* [Nodejs](https://nodejs.org/es/): Version 16.15.1 
+* [Google Fonts](https://fonts.google.com/)
+* [Bootstrap](https://getbootstrap.com/): Version 5.2.0
+* [Pexels](https://www.pexels.com/es-es/)
 ## FAQs
 ***
-A list of frequently asked questions
-1. **This is a question in bold**
-Answer of the first question with _italic words_. 
-2. __Second question in bold__ 
-To answer this question we use an unordered list:
-* First point
-* Second Point
-* Third point
-3. **Third question in bold**
-Answer of the third question with *italic words*.
-4. **Fourth question in bold**
-| Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
-|:--------------|:-------------:|--------------:|
-| text-align left | text-align center | text-align right |
+Dejamos a continuación, una lista de posibles FAQs que podrían surgir: 
+
+1. **¿Cuál es el propósito principal de este proyecto?**
+_El proyecto busca reflejar la mayoría de los contenidos que aprendimos durante el curso_.
+
+2. __¿Cuántas secciones tiene el proyecto?__ 
+Se pensó el sitio con 5 páginas principales, con foco en ser lo más simple posible: 
+* INDEX: un overview del sitio completo.
+* ABOUT US: un detalle de la consultoría, su historia y equipo.
+* NUESTROS SERVICIOS: un detalle de los servicios que ofrece la consultora.
+* NUESTROS CLIENTS: un pequeño overview de los clientes que trabajaron con nosotros.
+* CONTACT US: un formulario de contacto para posibles interesados en nuestro servicio.
+
+> Este proyecto se hizo gracias a la ayuda continua de la profesora, Eimy, y mi tutor, Joaquín Viretti.
